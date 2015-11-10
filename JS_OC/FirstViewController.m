@@ -52,7 +52,7 @@
                 [tempDic setObject:decodeValue forKey:dicArray[0]];
             }
         }
-       UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:@"这是OC原生的弹出窗" delegate:self cancelButtonTitle:@"收到" otherButtonTitles:nil];
+       UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"方式一" message:@"这是OC原生的弹出窗" delegate:self cancelButtonTitle:@"收到" otherButtonTitles:nil];
        [alertView show];
        NSLog(@"tempDic:%@",tempDic);
         return NO;

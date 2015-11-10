@@ -17,6 +17,10 @@
 		B93B1CAA1BEDC982009C86FA /* First.html in Resources */ = {isa = PBXBuildFile; fileRef = B93B1CA91BEDC982009C86FA /* First.html */; };
 		B93B1CAC1BEDC9B8009C86FA /* Second.html in Resources */ = {isa = PBXBuildFile; fileRef = B93B1CAB1BEDC9B8009C86FA /* Second.html */; };
 		B93B1CAE1BEDD131009C86FA /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93B1CAD1BEDD131009C86FA /* JavaScriptCore.framework */; };
+		B99434BE1BF24B27005579DD /* Simulator Screen 21.png in Resources */ = {isa = PBXBuildFile; fileRef = B99434BA1BF24B27005579DD /* Simulator Screen 21.png */; };
+		B99434BF1BF24B27005579DD /* Simulator Screen 11.png in Resources */ = {isa = PBXBuildFile; fileRef = B99434BB1BF24B27005579DD /* Simulator Screen 11.png */; };
+		B99434C01BF24B27005579DD /* Simulator Screen 12.png in Resources */ = {isa = PBXBuildFile; fileRef = B99434BC1BF24B27005579DD /* Simulator Screen 12.png */; };
+		B99434C11BF24B27005579DD /* Simulator Screen 22.png in Resources */ = {isa = PBXBuildFile; fileRef = B99434BD1BF24B27005579DD /* Simulator Screen 22.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,10 @@
 		B93B1CA91BEDC982009C86FA /* First.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = First.html; sourceTree = "<group>"; };
 		B93B1CAB1BEDC9B8009C86FA /* Second.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Second.html; sourceTree = "<group>"; };
 		B93B1CAD1BEDD131009C86FA /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		B99434BA1BF24B27005579DD /* Simulator Screen 21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen 21.png"; sourceTree = "<group>"; };
+		B99434BB1BF24B27005579DD /* Simulator Screen 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen 11.png"; sourceTree = "<group>"; };
+		B99434BC1BF24B27005579DD /* Simulator Screen 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen 12.png"; sourceTree = "<group>"; };
+		B99434BD1BF24B27005579DD /* Simulator Screen 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen 22.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,10 @@
 		B93B1C801BEDC7D7009C86FA = {
 			isa = PBXGroup;
 			children = (
+				B99434BB1BF24B27005579DD /* Simulator Screen 11.png */,
+				B99434BC1BF24B27005579DD /* Simulator Screen 12.png */,
+				B99434BA1BF24B27005579DD /* Simulator Screen 21.png */,
+				B99434BD1BF24B27005579DD /* Simulator Screen 22.png */,
 				B93B1CAD1BEDD131009C86FA /* JavaScriptCore.framework */,
 				B93B1C8B1BEDC7D7009C86FA /* JS_OC */,
 				B93B1C8A1BEDC7D7009C86FA /* Products */,
@@ -155,7 +167,11 @@
 				B93B1CAA1BEDC982009C86FA /* First.html in Resources */,
 				B93B1C991BEDC7D7009C86FA /* Assets.xcassets in Resources */,
 				B93B1C971BEDC7D7009C86FA /* Main.storyboard in Resources */,
+				B99434BF1BF24B27005579DD /* Simulator Screen 11.png in Resources */,
+				B99434C11BF24B27005579DD /* Simulator Screen 22.png in Resources */,
+				B99434C01BF24B27005579DD /* Simulator Screen 12.png in Resources */,
 				B93B1CAC1BEDC9B8009C86FA /* Second.html in Resources */,
+				B99434BE1BF24B27005579DD /* Simulator Screen 21.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +334,7 @@
 				B93B1CA21BEDC7D8009C86FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

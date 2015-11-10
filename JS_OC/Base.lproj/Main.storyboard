@@ -47,7 +47,7 @@
         <!--方式一-->
         <scene sceneID="GNn-Ar-a79">
             <objects>
-                <viewController id="Gsz-2c-cg0" customClass="FirstViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Gsz-2c-cg0" customClass="FirstViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hJW-bw-xjO"/>
                         <viewControllerLayoutGuide type="bottom" id="FOE-2r-GOO"/>
@@ -56,18 +56,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kVx-2M-QtT">
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kVx-2M-QtT">
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="kVx-2M-QtT" firstAttribute="top" secondItem="hJW-bw-xjO" secondAttribute="bottom" id="0Vs-ZF-jrG"/>
-                            <constraint firstItem="FOE-2r-GOO" firstAttribute="top" secondItem="kVx-2M-QtT" secondAttribute="bottom" id="O5g-CZ-XGm"/>
-                            <constraint firstItem="kVx-2M-QtT" firstAttribute="leading" secondItem="lzq-8A-fmv" secondAttribute="leading" id="tbd-83-QNe"/>
-                            <constraint firstAttribute="trailing" secondItem="kVx-2M-QtT" secondAttribute="trailing" id="zEb-oU-W8S"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="方式一" id="c3E-en-XfT"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -111,18 +105,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQB-YT-Ouq">
-                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bQB-YT-Ouq">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="bQB-YT-Ouq" firstAttribute="top" secondItem="cPh-aP-GAc" secondAttribute="bottom" id="6AM-9R-5vz"/>
-                            <constraint firstItem="QJI-bf-OTg" firstAttribute="top" secondItem="bQB-YT-Ouq" secondAttribute="bottom" id="F8Z-5L-obu"/>
-                            <constraint firstAttribute="trailing" secondItem="bQB-YT-Ouq" secondAttribute="trailing" id="Qs4-vq-LOd"/>
-                            <constraint firstItem="bQB-YT-Ouq" firstAttribute="leading" secondItem="Iop-7V-qWX" secondAttribute="leading" id="b0b-he-2o3"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="方式二" id="kAq-0h-pLk"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -133,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JAq-xj-xNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="173" y="511"/>
+            <point key="canvasLocation" x="173" y="506"/>
         </scene>
     </scenes>
 </document>
