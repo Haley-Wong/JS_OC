@@ -1,0 +1,36 @@
+<html>
+    <header>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript">
+            
+            function showAlert(message){
+                alert(message);
+            }
+        
+            function loadURL(url) {
+                var iFrame;
+                iFrame = document.createElement("iframe");
+                iFrame.setAttribute("src", url);
+                iFrame.setAttribute("style", "display:none;");
+                iFrame.setAttribute("height", "0px");
+                iFrame.setAttribute("width", "0px");
+                iFrame.setAttribute("frameborder", "0");
+                document.body.appendChild(iFrame);
+                // 发起请求后这个 iFrame 就没用了，所以把它从 dom 上移除掉
+                iFrame.parentNode.removeChild(iFrame);
+                iFrame = null;
+            }
+            function firstClick() {
+                loadURL("firstClick://shareClick?title=分享的标题&content=分享的内容&url=链接地址&imagePath=图片地址");
+            }
+        </script>
+    </header>
+    
+    <body>
+        <h2> 这里是第一种方式 </h2>
+        <br/>
+        <br/>
+        <button type="button" onclick="firstClick()">Click Me!</button>
+        
+    </body>
+</html>
