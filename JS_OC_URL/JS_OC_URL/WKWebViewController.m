@@ -11,7 +11,7 @@
 
 #import "WKWebViewController.h"
 
-@interface WKWebViewController ()<WKNavigationDelegate>
+@interface WKWebViewController ()<WKNavigationDelegate,WKUIDelegate>
 
 @property (strong, nonatomic)   WKWebView                   *webView;
 @property (strong, nonatomic)   UIProgressView              *progressView;
@@ -57,6 +57,7 @@
     [self.webView loadFileURL:fileURL allowingReadAccessToURL:fileURL];
     
     self.webView.navigationDelegate = self;
+    self.webView.UIDelegate = self;
     [self.view addSubview:self.webView];
 }
 
@@ -228,6 +229,18 @@
         return;
     }
     decisionHandler(WKNavigationActionPolicyAllow);
+}
+
+#pragma mark - WKUIDelegate
+- (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler
+{
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提醒" message:message preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:[UIAlertAction actionWithTitle:@"知道了" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        completionHandler();
+    }]];
+    
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 @end
