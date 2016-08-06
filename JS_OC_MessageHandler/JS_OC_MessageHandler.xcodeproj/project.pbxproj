@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B949B02F1D5586BE00DAE37C /* HLAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B949B02E1D5586BE00DAE37C /* HLAudioPlayer.m */; };
+		B949B0311D55874200DAE37C /* shake_sound_male.wav in Resources */ = {isa = PBXBuildFile; fileRef = B949B0301D55874200DAE37C /* shake_sound_male.wav */; };
+		B96232A51D5494C100B2B7BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B96232A41D5494C100B2B7BB /* main.m */; };
+		B96232A81D5494C100B2B7BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B96232A71D5494C100B2B7BB /* AppDelegate.m */; };
+		B96232B01D5494C100B2B7BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B96232AF1D5494C100B2B7BB /* Assets.xcassets */; };
+		B96232B31D5494C100B2B7BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B96232B11D5494C100B2B7BB /* LaunchScreen.storyboard */; };
+		B96232BD1D54950700B2B7BB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B96232BB1D54950700B2B7BB /* MainViewController.m */; };
+		B96232BE1D54950700B2B7BB /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B96232BC1D54950700B2B7BB /* MainViewController.xib */; };
+		B96232C11D54953E00B2B7BB /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B96232C01D54953E00B2B7BB /* WKWebViewController.m */; };
+		B96232C31D54958600B2B7BB /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B96232C21D54958600B2B7BB /* index.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B949B02D1D5586BE00DAE37C /* HLAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLAudioPlayer.h; sourceTree = "<group>"; };
+		B949B02E1D5586BE00DAE37C /* HLAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLAudioPlayer.m; sourceTree = "<group>"; };
+		B949B0301D55874200DAE37C /* shake_sound_male.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shake_sound_male.wav; sourceTree = "<group>"; };
+		B96232A01D5494C100B2B7BB /* JS_OC_MessageHandler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JS_OC_MessageHandler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B96232A41D5494C100B2B7BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B96232A61D5494C100B2B7BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B96232A71D5494C100B2B7BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B96232AF1D5494C100B2B7BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B96232B21D5494C100B2B7BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B96232B41D5494C100B2B7BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B96232BA1D54950700B2B7BB /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		B96232BB1D54950700B2B7BB /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		B96232BC1D54950700B2B7BB /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		B96232BF1D54953E00B2B7BB /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		B96232C01D54953E00B2B7BB /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		B96232C21D54958600B2B7BB /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B962329D1D5494C100B2B7BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B96232971D5494C100B2B7BB = {
+			isa = PBXGroup;
+			children = (
+				B96232A21D5494C100B2B7BB /* JS_OC_MessageHandler */,
+				B96232A11D5494C100B2B7BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B96232A11D5494C100B2B7BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B96232A01D5494C100B2B7BB /* JS_OC_MessageHandler.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B96232A21D5494C100B2B7BB /* JS_OC_MessageHandler */ = {
+			isa = PBXGroup;
+			children = (
+				B96232A61D5494C100B2B7BB /* AppDelegate.h */,
+				B96232A71D5494C100B2B7BB /* AppDelegate.m */,
+				B96232BA1D54950700B2B7BB /* MainViewController.h */,
+				B96232BB1D54950700B2B7BB /* MainViewController.m */,
+				B96232BC1D54950700B2B7BB /* MainViewController.xib */,
+				B96232BF1D54953E00B2B7BB /* WKWebViewController.h */,
+				B96232C01D54953E00B2B7BB /* WKWebViewController.m */,
+				B949B02D1D5586BE00DAE37C /* HLAudioPlayer.h */,
+				B949B02E1D5586BE00DAE37C /* HLAudioPlayer.m */,
+				B96232C21D54958600B2B7BB /* index.html */,
+				B949B0301D55874200DAE37C /* shake_sound_male.wav */,
+				B96232AF1D5494C100B2B7BB /* Assets.xcassets */,
+				B96232B11D5494C100B2B7BB /* LaunchScreen.storyboard */,
+				B96232B41D5494C100B2B7BB /* Info.plist */,
+				B96232A31D5494C100B2B7BB /* Supporting Files */,
+			);
+			path = JS_OC_MessageHandler;
+			sourceTree = "<group>";
+		};
+		B96232A31D5494C100B2B7BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B96232A41D5494C100B2B7BB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B962329F1D5494C100B2B7BB /* JS_OC_MessageHandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B96232B71D5494C100B2B7BB /* Build configuration list for PBXNativeTarget "JS_OC_MessageHandler" */;
+			buildPhases = (
+				B962329C1D5494C100B2B7BB /* Sources */,
+				B962329D1D5494C100B2B7BB /* Frameworks */,
+				B962329E1D5494C100B2B7BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JS_OC_MessageHandler;
+			productName = JS_OC_MessageHandler;
+			productReference = B96232A01D5494C100B2B7BB /* JS_OC_MessageHandler.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B96232981D5494C100B2B7BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Haley;
+				TargetAttributes = {
+					B962329F1D5494C100B2B7BB = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = B962329B1D5494C100B2B7BB /* Build configuration list for PBXProject "JS_OC_MessageHandler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B96232971D5494C100B2B7BB;
+			productRefGroup = B96232A11D5494C100B2B7BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B962329F1D5494C100B2B7BB /* JS_OC_MessageHandler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B962329E1D5494C100B2B7BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B96232C31D54958600B2B7BB /* index.html in Resources */,
+				B96232B31D5494C100B2B7BB /* LaunchScreen.storyboard in Resources */,
+				B949B0311D55874200DAE37C /* shake_sound_male.wav in Resources */,
+				B96232BE1D54950700B2B7BB /* MainViewController.xib in Resources */,
+				B96232B01D5494C100B2B7BB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B962329C1D5494C100B2B7BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B96232A81D5494C100B2B7BB /* AppDelegate.m in Sources */,
+				B96232BD1D54950700B2B7BB /* MainViewController.m in Sources */,
+				B96232A51D5494C100B2B7BB /* main.m in Sources */,
+				B949B02F1D5586BE00DAE37C /* HLAudioPlayer.m in Sources */,
+				B96232C11D54953E00B2B7BB /* WKWebViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B96232B11D5494C100B2B7BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B96232B21D5494C100B2B7BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B96232B51D5494C100B2B7BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B96232B61D5494C100B2B7BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B96232B81D5494C100B2B7BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JS_OC_MessageHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.suneee.JS-OC-MessageHandler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B96232B91D5494C100B2B7BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JS_OC_MessageHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.suneee.JS-OC-MessageHandler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B962329B1D5494C100B2B7BB /* Build configuration list for PBXProject "JS_OC_MessageHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B96232B51D5494C100B2B7BB /* Debug */,
+				B96232B61D5494C100B2B7BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B96232B71D5494C100B2B7BB /* Build configuration list for PBXNativeTarget "JS_OC_MessageHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B96232B81D5494C100B2B7BB /* Debug */,
+				B96232B91D5494C100B2B7BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B96232981D5494C100B2B7BB /* Project object */;
+}
