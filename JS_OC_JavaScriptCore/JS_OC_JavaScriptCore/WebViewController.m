@@ -47,6 +47,8 @@
 - (void)addCustomActions
 {
     JSContext *context = [self.webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
+    
+    [context evaluateScript:@"var arr = [3, 4, 'abc'];"];
 
     [self addScanWithContext:context];
     
@@ -66,7 +68,7 @@
 - (void)addScanWithContext:(JSContext *)context
 {
     context[@"scan"] = ^() {
-        NSLog(@"扫一扫啦%@",[NSThread currentThread]);
+        NSLog(@"扫一扫啦");
     };
 }
 
