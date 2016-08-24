@@ -2,60 +2,41 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf8">
             <script language="javascript">
-                function loadURL(url) {
-                    var iFrame;
-                    iFrame = document.createElement("iframe");
-                    iFrame.setAttribute("src", url);
-                    iFrame.setAttribute("style", "display:none;");
-                    iFrame.setAttribute("height", "0px");
-                    iFrame.setAttribute("width", "0px");
-                    iFrame.setAttribute("frameborder", "0");
-                    document.body.appendChild(iFrame);
-                    // 发起请求后这个iFrame就没用了，所以把它从dom上移除掉
-                    iFrame.parentNode.removeChild(iFrame);
-                    iFrame = null;
-                }
+             
             function scanClick() {
-                loadURL("haleyAction://scanClick");
+                scan();
             }
                 
             function shareClick() {
-                loadURL("haleyAction://shareClick?title=测试分享的标题&content=测试分享的内容&url=http://www.baidu.com");
+                share('测试分享的标题','测试分享的内容','url=http://www.baidu.com');
             }
-            
+
             function locationClick() {
-                loadURL("haleyAction://getLocation");
+                getLocation();
             }
-            
+
             function setLocation(location) {
                 asyncAlert(location);
                 document.getElementById("returnValue").value = location;
             }
-            
+
             function getQRCode(result) {
                 asyncAlert(result);
                 document.getElementById("returnValue").value = result;
             }
             
             function colorClick() {
-                loadURL("haleyAction://setColor?r=67&g=205&b=128&a=0.5");
+                setColor(67,205,12,0.5);
             }
             
             function payClick() {
-                loadURL("haleyAction://payAction?order_no=201511120981234&channel=wx&amount=1&subject=粉色外套");
+                payAction('201511120981234','wx',1,'粉色外套');
             }
             
-            function payResult(str,code) {
-                var content = str + ", " + code;
-                asyncAlert(content);
-                document.getElementById("returnValue").value = content;
+            function payResult(str) {
+                asyncAlert(str);
+                document.getElementById("returnValue").value = str;
             }
-            
-<!--            function payResult(str) {-->
-<!--                var content = str;-->
-<!--                asyncAlert(content);-->
-<!--                document.getElementById("returnValue").value = content;-->
-<!--            }-->
             
             function shareResult(channel_id,share_channel,share_url) {
                 var content = channel_id+","+share_channel+","+share_url;
@@ -64,11 +45,15 @@
             }
 
             function shake() {
-                loadURL("haleyAction://shake");
+                shake();
             }
             
             function goBack() {
-                loadURL("haleyAction://back");
+                goBack();
+            }
+            
+            function showArr(){
+                asyncAlert(arr);
             }
             
             function asyncAlert(content) {
@@ -90,6 +75,7 @@
         <input type="button" value="支付" onclick="payClick()" />
         <input type="button" value="摇一摇" onclick="shake()" />
         <input type="button" value="返回" onclick="goBack()" />
+        <input type="button" value="输出arr" onclick="showArr()" />
         
         <h1>这是文件上传</h1>
 

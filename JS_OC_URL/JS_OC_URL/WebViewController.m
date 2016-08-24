@@ -131,7 +131,8 @@
     // 支付操作
     
     // 将支付结果返回给js
-    NSString *jsStr = [NSString stringWithFormat:@"payResult('%@')",@"支付成功"];
+    NSUInteger code = 1;
+    NSString *jsStr = [NSString stringWithFormat:@"payResult('%@',%lu)",@"支付成功",(unsigned long)code];
     [self.webView stringByEvaluatingJavaScriptFromString:jsStr];
 }
 
