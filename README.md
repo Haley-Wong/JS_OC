@@ -1,5 +1,5 @@
 # JS_OC
-JS与原生OC互相调用的Demo(持续更新中),如果帮助到你理解JS与iOS Native的交互，麻烦给个star。<br>
+JS与原生OC互相调用的Demo(持续更新中),如果帮助到你理解JS与iOS Native的交互，麻烦给个star ⭐️ ⭐️。<br>
 计划整理的JS与OC调用的系列包括：
 * 1.在JS 中做一次URL跳转，然后在OC中拦截跳转。（这里分为UIWebView 和 WKWebView两种，去年因为还要兼容iOS 6，所以没办法只能采用UIWebView来做。）
 * 2.利用WKWebView 的MessageHandler。
