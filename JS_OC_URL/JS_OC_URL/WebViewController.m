@@ -160,4 +160,9 @@
     return YES;
 }
 
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    [webView stringByEvaluatingJavaScriptFromString:@"var arr = [3, 4, 'abc'];"];
+}
+
 @end
