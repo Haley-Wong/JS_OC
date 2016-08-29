@@ -95,7 +95,6 @@
 }
 
 #pragma mark - private method
-#pragma mark - private method
 - (void)registerNativeFunctions
 {
     [self registScanFunction];
