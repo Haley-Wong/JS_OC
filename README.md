@@ -37,6 +37,12 @@ JS与原生OC互相调用的Demo(持续更新中),如果帮助到你理解JS与i
 [iOS下JS与OC互相调用（五）--UIWebView + WebViewJavascriptBridge](http://www.jianshu.com/p/2be213e3f673)<br>
 [iOS下JS与OC互相调用（六）--WKWebView + WebViewJavascriptBridge](http://www.jianshu.com/p/e951af9e5e74)<br>
 
+## JS_OC_Cordova
+[JS_OC_Cordova](https://github.com/Haley-Wong/JS_OC/tree/master/JS_OC_Cordova)是通过第三方框架Cordova来实现JS与OC交互的示例。<br>
+相关文章地址：<br>
+[iOS下JS与OC互相调用（七）--Cordova 基础](http://www.jianshu.com/p/78e486b31953)<br>
+[iOS下JS与OC互相调用（八）--Cordova详解+实战](http://www.jianshu.com/p/e74bc7abac8d)<br>
+
 简书和csdn 下分别有一个专题，还在持续更新中：<br>
 简书：[JS与OC交互](http://www.jianshu.com/notebooks/5513092/latest)
 
