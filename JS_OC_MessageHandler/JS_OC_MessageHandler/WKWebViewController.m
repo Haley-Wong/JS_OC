@@ -36,19 +36,40 @@
     [self.webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    // addScriptMessageHandler 很容易导致循环引用
+    // 控制器 强引用了WKWebView,WKWebView copy(强引用了）configuration， configuration copy （强引用了）userContentController
+    // userContentController 强引用了 self （控制器）
+    [self.webView.configuration.userContentController addScriptMessageHandler:self name:@"ScanAction"];
+    [self.webView.configuration.userContentController addScriptMessageHandler:self name:@"Location"];
+    [self.webView.configuration.userContentController addScriptMessageHandler:self name:@"Share"];
+    [self.webView.configuration.userContentController addScriptMessageHandler:self name:@"Color"];
+    [self.webView.configuration.userContentController addScriptMessageHandler:self name:@"Pay"];
+    [self.webView.configuration.userContentController addScriptMessageHandler:self name:@"Shake"];
+    [self.webView.configuration.userContentController addScriptMessageHandler:self name:@"GoBack"];
+    [self.webView.configuration.userContentController addScriptMessageHandler:self name:@"PlaySound"];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    // 因此这里要记得移除handlers
+    [self.webView.configuration.userContentController removeScriptMessageHandlerForName:@"ScanAction"];
+    [self.webView.configuration.userContentController removeScriptMessageHandlerForName:@"Location"];
+    [self.webView.configuration.userContentController removeScriptMessageHandlerForName:@"Share"];
+    [self.webView.configuration.userContentController removeScriptMessageHandlerForName:@"Color"];
+    [self.webView.configuration.userContentController removeScriptMessageHandlerForName:@"Pay"];
+    [self.webView.configuration.userContentController removeScriptMessageHandlerForName:@"Shake"];
+    [self.webView.configuration.userContentController removeScriptMessageHandlerForName:@"GoBack"];
+    [self.webView.configuration.userContentController removeScriptMessageHandlerForName:@"PlaySound"];
+}
+
 - (void)initWKWebView
 {
     WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc] init];
-    configuration.userContentController = [WKUserContentController new];
-    
-    [configuration.userContentController addScriptMessageHandler:self name:@"ScanAction"];
-    [configuration.userContentController addScriptMessageHandler:self name:@"Location"];
-    [configuration.userContentController addScriptMessageHandler:self name:@"Share"];
-    [configuration.userContentController addScriptMessageHandler:self name:@"Color"];
-    [configuration.userContentController addScriptMessageHandler:self name:@"Pay"];
-    [configuration.userContentController addScriptMessageHandler:self name:@"Shake"];
-    [configuration.userContentController addScriptMessageHandler:self name:@"GoBack"];
-    [configuration.userContentController addScriptMessageHandler:self name:@"PlaySound"];
     
     WKPreferences *preferences = [WKPreferences new];
     preferences.javaScriptCanOpenWindowsAutomatically = YES;
@@ -102,6 +123,10 @@
         NSLog(@"%@----%@",result, error);
     }];
    
+    NSString *jsStr2 = @"window.ctuapp_share_img";
+    [self.webView evaluateJavaScript:jsStr2 completionHandler:^(id _Nullable result, NSError * _Nullable error) {
+        NSLog(@"%@----%@",result, error);
+    }];
 }
 
 - (void)shareWithParams:(NSDictionary *)tempDic
