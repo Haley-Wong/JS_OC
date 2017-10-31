@@ -132,6 +132,7 @@ decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
             [_base logUnkownMessage:url];
         }
         decisionHandler(WKNavigationActionPolicyCancel);
+        return;// iOS 11 crash
     }
     
     if (strongDelegate && [strongDelegate respondsToSelector:@selector(webView:decidePolicyForNavigationAction:decisionHandler:)]) {
