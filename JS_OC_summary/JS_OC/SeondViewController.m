@@ -34,8 +34,10 @@
         NSLog(@"+++++++Begin Log+++++++");
         NSArray *args = [JSContext currentArguments];
         
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"方式二" message:@"这是OC原生的弹出窗" delegate:self cancelButtonTitle:@"收到" otherButtonTitles:nil];
-        [alertView show];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"方式二" message:@"这是OC原生的弹出窗" delegate:self cancelButtonTitle:@"收到" otherButtonTitles:nil];
+            [alertView show];
+        });
         
         for (JSValue *jsVal in args) {
             NSLog(@"%@", jsVal.toString);

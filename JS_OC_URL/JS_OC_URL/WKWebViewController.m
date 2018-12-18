@@ -181,7 +181,7 @@
     // 支付操作
     
     // 将支付结果返回给js
-    NSString *jsStr = [NSString stringWithFormat:@"payResult('%@')",@"支付成功"];
+    NSString *jsStr = [NSString stringWithFormat:@"payResult('%@', 1)",@"支付成功"];
     [self.webView evaluateJavaScript:jsStr completionHandler:^(id _Nullable result, NSError * _Nullable error) {
         NSLog(@"%@----%@",result, error);
     }];

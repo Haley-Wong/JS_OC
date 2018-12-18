@@ -108,6 +108,7 @@
     CGFloat b = [[tempDic objectForKey:@"b"] floatValue];
     CGFloat a = [[tempDic objectForKey:@"a"] floatValue];
     
+    // 这里修改背景色是因为有些场景没有导航栏，然后WebView 是从 状态栏下20开始布局，用于修改状态栏背景色
     self.view.backgroundColor = [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a];
 }
 

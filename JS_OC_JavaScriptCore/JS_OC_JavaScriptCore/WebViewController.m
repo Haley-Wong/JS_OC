@@ -117,8 +117,12 @@
         CGFloat g = [[args[1] toNumber] floatValue];
         CGFloat b = [[args[2] toNumber] floatValue];
         CGFloat a = [[args[3] toNumber] floatValue];
- 
-        weakSelf.view.backgroundColor = [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a];
+        
+        // 注意 现在执行JS是在WebThread的子线程（以前是在主线程），操作UI需要回到主线程。
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // 这里是操作UI的操作
+            weakSelf.view.backgroundColor = [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a];
+        });
     };
 }
 
@@ -150,7 +154,9 @@
 {
     
     context[@"shake"] = ^() {
-        AudioServicesPlaySystemSound (kSystemSoundID_Vibrate);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            AudioServicesPlaySystemSound (kSystemSoundID_Vibrate);
+        });
     };
 }
 
@@ -158,7 +164,9 @@
 {
     __weak typeof(self) weakSelf = self;
     context[@"goBack"] = ^() {
-        [weakSelf.webView goBack];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [weakSelf.webView goBack];
+        });
     };
 }
 
